@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{FF4B0B32-2B91-4DE0-848B-3B584298A62F}</ProjectGuid>
+    <RootNamespace>CGMRESAutopilotLatest</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include/cgmres/simulator;$(SolutionDir)include/cgmres</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include/cgmres/simulator;$(SolutionDir)include/cgmres</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include/cgmres/simulator;$(SolutionDir)include/cgmres</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include/cgmres/simulator;$(SolutionDir)include/cgmres</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="hamiltonian.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mmg_eo.cpp" />
+    <ClCompile Include="nmpc_model.cpp" />
+    <ClCompile Include="src\cgmres_initializer.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="src\continuation_gmres.cpp" />
+    <ClCompile Include="src\input_saturation.cpp" />
+    <ClCompile Include="src\input_saturation_functions.cpp" />
+    <ClCompile Include="src\input_saturation_set.cpp" />
+    <ClCompile Include="src\linear_algebra.cpp" />
+    <ClCompile Include="src\ms_cgmres_with_input_saturation.cpp" />
+    <ClCompile Include="src\ms_cgmres_with_input_saturation_initializer.cpp" />
+    <ClCompile Include="src\ms_continuation_with_input_saturation.cpp" />
+    <ClCompile Include="src\ms_ocp_with_input_saturation.cpp" />
+    <ClCompile Include="src\multiple_shooting_cgmres.cpp" />
+    <ClCompile Include="src\multiple_shooting_continuation.cpp" />
+    <ClCompile Include="src\multiple_shooting_ocp.cpp" />
+    <ClCompile Include="src\optimal_control_problem.cpp" />
+    <ClCompile Include="src\simulator\numerical_integrator.cpp" />
+    <ClCompile Include="src\simulator\save_simulation_data.cpp" />
+    <ClCompile Include="src\single_shooting_continuation.cpp" />
+    <ClCompile Include="src\single_shooting_ocp.cpp" />
+    <ClCompile Include="src\time_varying_smooth_horizon.cpp" />
+    <ClCompile Include="src\zero_horizon_ocp.cpp" />
+    <ClCompile Include="src\zero_horizon_ocp_with_input_saturation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\cgmres\cgmres_initializer.hpp" />
+    <ClInclude Include="include\cgmres\continuation_gmres.hpp" />
+    <ClInclude Include="include\cgmres\hamiltonian.hpp" />
+    <ClInclude Include="include\cgmres\input_saturation.hpp" />
+    <ClInclude Include="include\cgmres\input_saturation_functions.hpp" />
+    <ClInclude Include="include\cgmres\input_saturation_set.hpp" />
+    <ClInclude Include="include\cgmres\linear_algebra.hpp" />
+    <ClInclude Include="include\cgmres\matrixfree_gmres.hpp" />
+    <ClInclude Include="include\cgmres\mmg_eo.hpp" />
+    <ClInclude Include="include\cgmres\ms_cgmres_with_input_saturation.hpp" />
+    <ClInclude Include="include\cgmres\ms_cgmres_with_input_saturation_initializer.hpp" />
+    <ClInclude Include="include\cgmres\ms_continuation_with_input_saturation.hpp" />
+    <ClInclude Include="include\cgmres\ms_ocp_with_input_saturation.hpp" />
+    <ClInclude Include="include\cgmres\multiple_shooting_cgmres.hpp" />
+    <ClInclude Include="include\cgmres\multiple_shooting_continuation.hpp" />
+    <ClInclude Include="include\cgmres\multiple_shooting_ocp.hpp" />
+    <ClInclude Include="include\cgmres\newton_gmres_for_ocp.hpp" />
+    <ClInclude Include="include\cgmres\nmpc_model.hpp" />
+    <ClInclude Include="include\cgmres\optimal_control_problem.hpp" />
+    <ClInclude Include="include\cgmres\simulator\cgmres_simulator.hpp" />
+    <ClInclude Include="include\cgmres\simulator\numerical_integrator.hpp" />
+    <ClInclude Include="include\cgmres\simulator\save_simulation_data.hpp" />
+    <ClInclude Include="include\cgmres\single_shooting_continuation.hpp" />
+    <ClInclude Include="include\cgmres\single_shooting_ocp.hpp" />
+    <ClInclude Include="include\cgmres\time_varying_smooth_horizon.hpp" />
+    <ClInclude Include="include\cgmres\zero_horizon_ocp.hpp" />
+    <ClInclude Include="include\cgmres\zero_horizon_ocp_with_input_saturation.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
